@@ -6,6 +6,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+:root {
+  /* Font color */
+  --main-font-color: black;
+  --second-font-color: rgb(116 154 253);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -15,12 +21,71 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.signInPage {
+  margin-bottom: 40px;
+}
+
+.signinheaderText {
+  margin-top: 40px;
+}
+
+.signinheader p {
+  text-align: center;
+  color: var(--second-font-color);
+  margin: 0px;
+}
+
+.headone {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.headtwo {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.signUpOptionLogos {
+  display: flex;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 72px;
+  gap: 60px;
+}
+
+.UserSelectionBlock {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.4;
+  transition: .4s;
+}
+
+.UserSelectionBlock:hover {
+  opacity: 1;
+}
+
+.UserSelectionBlock:hover > img {
+  border: 2px solid black;
+  border-radius: 100px;
+}
+
+.UserSelectionBlock img {
+  width: 90px;
+  height: 90px;
+}
+
+.UserSelectionBlock p {
+  text-align: center;
+  color: var(--main-font-color);
+  margin-top: 9px;
+  font-size: 25px;
+}
+
+.signUpFields {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
